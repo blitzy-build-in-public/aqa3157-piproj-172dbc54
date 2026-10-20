@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+package-lock.json
+blitzy
+# Pre-existing repository README (authored by Blitzy outside this setup's scope).
+README.md

@@ -112,6 +112,14 @@
   --width-icon-chat: 22.79px;
   --height-icon-chat: 21.77px;
 
+  /* Hairline strokes. Plan-added: the avatar's ring is a 0.5px stroke, and
+     Tailwind's width and spacing scales step 0/1/2/4/8 only, so the hairline
+     has to be declared here rather than written as a literal in a component.
+     The ring paints inside the element and is therefore exposed by a hairline
+     padding of the same width. */
+  --ring-width-hairline: 0.5px;
+  --spacing-hairline: 0.5px;
+
   /* Motion — plan-added (gap G1): the design contains no animation */
   --animate-spinner: spinner 0.8s linear infinite;
 

@@ -1,7 +1,28 @@
+# Installed dependencies — never formatted.
 node_modules
+
+# Build output: vite's bundle and tsc's incremental build info.
 dist
+*.tsbuildinfo
+
+# Coverage output from vitest.
 coverage
+
+# Local environment file; .env.example is the tracked template.
+.env.local
+
+# npm's generated lockfile: reformatting it would bury a real resolution change
+# in an artificial diff.
 package-lock.json
+
+# Figma assets: every file here is exported from the design file, one per asset
+# node, and Prettier has no parser for either format — an unexcluded vector makes
+# `prettier --check .` fail with "No parser could be inferred for file". Only the
+# exported formats are excluded, so the hand-written icons/index.ts barrel stays
+# under the format gate.
+src/components/ui/icons/*.svg
+src/components/ui/icons/*.png
+
+# Run-time validation artifacts (screenshots, screen recordings), not authored
+# by the project.
 blitzy
-# Pre-existing repository README (authored by Blitzy outside this setup's scope).
-README.md

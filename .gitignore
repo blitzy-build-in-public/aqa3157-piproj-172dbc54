@@ -9,18 +9,18 @@ dist-ssr
 # Coverage
 coverage
 
-# Local env files
+# Local env files (.env.example is the documented template and stays tracked)
 .env
 .env.*
 !.env.example
+*.local
 
 # Logs
 *.log
 npm-debug.log*
 
-# Editor and OS files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS files
 .DS_Store
-*.local
+
+# Generated validation artifacts (screenshots, recordings)
+/blitzy/
